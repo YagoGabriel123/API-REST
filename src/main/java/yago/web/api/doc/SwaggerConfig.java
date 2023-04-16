@@ -20,21 +20,21 @@ public class SwaggerConfig {
 
     private Contact contato() {
         return new Contact(
-                "Seu nome",
-                "http://www.seusite.com.br",
-                "voce@seusite.com.br");
+                "Yago Abreu",
+                "https://github.com/YagoGabriel123",
+                "https://mail.google.com/yagog4briel@gmail.com");
     }
 
     private ApiInfoBuilder informacoesApi() {
 
         ApiInfoBuilder apiInfoBuilder = new ApiInfoBuilder();
 
-        apiInfoBuilder.title("Title - Rest API");
+        apiInfoBuilder.title("Rest API");
         apiInfoBuilder.description("API exemplo de uso de Springboot REST API");
-        apiInfoBuilder.version("1.0");
-        apiInfoBuilder.termsOfServiceUrl("Termo de uso: Open Source");
-        apiInfoBuilder.license("Licença - Sua Empresa");
-        apiInfoBuilder.licenseUrl("http://www.seusite.com.br");
+        apiInfoBuilder.version("1.1");
+        //apiInfoBuilder.termsOfServiceUrl("Termo de uso: Open Source");
+       // apiInfoBuilder.license("Licença - Sua Empresa");
+       // apiInfoBuilder.licenseUrl("http://www.seusite.com.br");
         apiInfoBuilder.contact(this.contato());
 
         return apiInfoBuilder;
